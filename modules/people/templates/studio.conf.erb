@@ -1,0 +1,9 @@
+server {
+  access_log <%= scope.lookupvar "nginx::config::logdir" %>/studio.access.log main;
+  listen 80;
+  root <%= scope.lookupvar "boxen::config::srcdir" %>;
+  server_name studio.dev;
+
+  autoindex on;
+  index index.html;
+}
