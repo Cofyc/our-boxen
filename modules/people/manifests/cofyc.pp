@@ -13,6 +13,8 @@ class people::cofyc {
       "irssi",
       "mercurial",
       "p7zip",
+      "autoconf",
+      "automake",
     ]:
   }
 
