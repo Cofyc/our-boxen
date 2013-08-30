@@ -18,6 +18,8 @@ class people::cofyc {
     ]:
   }
 
+  include ruby::2_0_0_p195
+
   # studio.dev
   include nginx::config
   include nginx
