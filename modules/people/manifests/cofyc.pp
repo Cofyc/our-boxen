@@ -18,6 +18,7 @@ class people::cofyc {
       "automake",
       "wget",
       "aria2",
+      "unrar",
     ]:
   }
 
