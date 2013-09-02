@@ -1,4 +1,5 @@
 class people::cofyc {
+  # basic softwares
   package {
     [
       "coreutils",
@@ -15,9 +16,12 @@ class people::cofyc {
       "p7zip",
       "autoconf",
       "automake",
+      "wget",
+      "aria2",
     ]:
   }
 
+  # used by my-life
   include ruby::2_0_0_p195
 
   # studio.dev
