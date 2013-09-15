@@ -33,4 +33,12 @@ class people::cofyc {
     require => File[$nginx::config::sitesdir],
     notify  => Service['dev.nginx'],
   } 
+
+  # special domains
+  file { '/etc/resolver/google.com':
+    content => 'nameserver 180.153.139.245',
+    group   => 'wheel',
+    owner   => 'root',
+    require => File['/etc/resolver'],
+  }
 }
